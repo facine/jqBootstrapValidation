@@ -1070,7 +1070,7 @@
                 name: "Passwordagain",
                 type: "match",
                 match: "password",
-                message: "Does not match the given password<!-- data-validator-paswordagain-message to override -->"
+                message: "Does not match the given password<!-- data-validation-paswordagain-message to override -->"
             },
             positive: {
                 name: "Positive",
@@ -1086,24 +1086,24 @@
                 name: "Integer",
                 type: "regex",
                 regex: "[+-]?\\d+",
-                message: "No decimal places allowed<!-- data-validator-integer-message to override -->"
+                message: "No decimal places allowed<!-- data-validation-integer-message to override -->"
             },
             positivenumber: {
                 name: "Positivenumber",
                 type: "min",
                 min: 0,
-                message: "Must be a positive number<!-- data-validator-positivenumber-message to override -->"
+                message: "Must be a positive number<!-- data-validation-positivenumber-message to override -->"
             },
             negativenumber: {
                 name: "Negativenumber",
                 type: "max",
                 max: 0,
-                message: "Must be a negative number<!-- data-validator-negativenumber-message to override -->"
+                message: "Must be a negative number<!-- data-validation-negativenumber-message to override -->"
             },
             required: {
                 name: "Required",
                 type: "required",
-                message: "This is required<!-- data-validator-required-message to override -->"
+                message: "This is required<!-- data-validation-required-message to override -->"
             },
             checkone: {
                 name: "Checkone",
@@ -1125,7 +1125,8 @@
         }
     };
 
-    var formatValidatorName = function (name) {
+    var format
+    Name = function (name) {
         return name
             .toLowerCase()
             .replace(
